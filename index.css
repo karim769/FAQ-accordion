@@ -1,0 +1,129 @@
+
+:root
+{
+
+    /* Font */
+
+    --Family:'Work Sans';
+    /* - Weights: 400, 600, 700 */
+
+    /* Colors */
+
+    --White: hsl(0, 0%, 100%);
+    --Light-pink: hsl(275, 100%, 97%);
+    --Grayish-purple: hsl(292, 16%, 49%);
+    --Dark-purple: hsl(292, 42%, 14%);
+
+
+
+}
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body
+{
+
+
+    font-family: var(--Family);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--Light-pink);
+    background-image: url(./assets/images/background-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+main
+{
+    background-color: var(--White);
+    margin: 1em;
+    padding: 1em;
+    border-radius: 6px;
+    max-width:30em;
+}
+
+main >:first-child {
+
+    display: flex;
+    align-items: center;
+}
+
+main >:first-child img
+{
+   
+    width: 1.3em;
+
+}
+
+main >:first-child h1{
+
+    font-weight:700 ;
+    font-size: 1.6rem;
+    color: var(--Dark-purple);
+    margin-left: 1em;
+
+}
+
+.title-p
+{
+
+
+    color: var(--Dark-purple);
+    font-weight: 600;
+    width: 85%;   
+    margin: revert; 
+
+}
+
+.discrption-p
+{
+
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: var(--Grayish-purple);
+    margin: revert;
+    line-height: 1.3em;
+    display:none;
+
+
+}
+
+.container >div
+{
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.image
+{
+
+    cursor: pointer;
+
+}
+
+@media(min-width:62em){
+
+
+body{
+
+background-image: url(./assets/images/background-pattern-desktop.svg);
+
+
+}
+
+
+}
